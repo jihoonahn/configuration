@@ -1,0 +1,11 @@
+.DS_Store
+/.build
+/Packages
+*.xcworkspace
+*.xcodeproj
+xcuserdata/
+DerivedData/
+.swiftpm
+
+# Plugin 
+*.tuist-plugin.zip

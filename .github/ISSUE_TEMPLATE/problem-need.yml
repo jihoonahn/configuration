@@ -1,0 +1,57 @@
+name: Problem or need
+description: Please report any problems or needs that you have encountered which Configuration currently does not address or inadequately solves
+title: "Insert title here"
+labels: ["type:need/problem"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to help improve Configuration!
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the bug and the expected behavior
+      placeholder: A clear and concise description of what the bug is, and what you expect to happen instead.
+    validations:
+      required: true
+  - type: textarea
+    id: potential-solution
+    attributes:
+      label: Potential solution
+      description: If you have any ideas for solving the problem, please feel free to share them here.
+      placeholder: Please provide a detailed explanation of how you would approach solving the problem
+    validations:
+      required: false
+  - type: input
+    id: macos-version
+    attributes:
+      label: macOS version
+      description: Which macOS version are you using?
+      placeholder: "13.0"
+    validations:
+      required: true
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Plugin version
+      description: Which plugin version are you using?
+      placeholder: "0.1.0"
+    validations:
+      required: true
+  - type: input
+    id: tuist-version
+    attributes:
+      label: Tuist version
+      description: Which tuist version are you using?
+      placeholder: "3.30.0"
+    validations:
+      required: true
+  - type: input
+    id: xcode-version
+    attributes:
+      label: Xcode version
+      description: Which version of Xcode are you using?
+      placeholder: "15.0.0"
+    validations:
+      required: true
