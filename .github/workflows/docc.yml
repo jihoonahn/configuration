@@ -60,7 +60,7 @@ jobs:
                 || echo "⚠️ Documentation skipped for Configuration @ "$tag".";
             fi;
           done
-      
+
       - name: Fix permissions
         run: 'sudo chown -R $USER docs-out'
 
