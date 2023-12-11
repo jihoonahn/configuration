@@ -14,10 +14,10 @@ Configuration is a Tuist Plugin that helps you manage your configuration more ea
 ## Topics
 
 ### Using configuration
-- ``Configuration``
+- ``Configurations``
 
 ### Configuration management
-- ``ConfigurationType``
+- ``ConfigurationsType``
 
 ### Configuration Type
 - ``Debug``

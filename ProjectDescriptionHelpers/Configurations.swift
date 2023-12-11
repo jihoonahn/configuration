@@ -1,16 +1,16 @@
 import ProjectDescription
 import Foundation
 
-/// A property wrapper for configuration.
+/// A property wrapper for configurations.
 ///
 /// All Configurations are stored in  ``ConfigurationValues`` and one uses this property wrapper.
 ///
 /// ```swift
-/// @Configuration(\.default) var configuration
+/// @Configurations(\.default) var configuration
 /// ```
 
 @propertyWrapper
-public struct Configuration: @unchecked Sendable {
+public struct Configurations: @unchecked Sendable {
     private let keyPath: KeyPath<ConfigurationValues, [ProjectDescription.Configuration]>
     
     /// Creates a configuration property to read the specified key path.

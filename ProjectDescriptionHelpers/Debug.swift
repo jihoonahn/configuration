@@ -27,7 +27,7 @@ public struct Debug: ConfigurationConvertable {
     ///   - type: Replaces the content through the specified configuration type
     ///   - settings: The base build settings to apply
     public init(
-        _ type: some ConfigurationType,
+        _ type: some ConfigurationsType,
         settings: SettingsDictionary = [:]
     ) {
         self.init(name: type.rawValue, settings: settings, xcconfig: type.path)
