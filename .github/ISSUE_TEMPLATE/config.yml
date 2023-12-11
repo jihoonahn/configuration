@@ -2,6 +2,9 @@ blank_issues_enabled: false
 
 contact_links:
 
+  - name: Documentation
+    url: https://jihoonahn.github.io/configuration/main/documentation/configuration/
+    about: Read the Configuration's documentation
   - name: Discord
     url: https://discord.com/users/649233319820787712
     about: discord chat
