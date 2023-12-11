@@ -23,6 +23,11 @@ let config = Config(
 )
 ```
 
+## Documentation
+The documentation for releases and `main` are available here:
+- [`main`](https://jihoonahn.github.io/configuration/main/documentation/configuration/)
+
+
 ## Using
 
 Then import the `Configuration` from thr location you want to use.
@@ -62,9 +67,6 @@ You can import and use the configuration using keypath where you want to use it.
 ```swift
 @Configurations(\.default) var configuration
 ```
-
-## Support later
-- docc documentation
 
 ## License
 **configuration** is under MIT license. See the [LICENSE](https://github.com/Jihoonahn/configuration/blob/main/LICENSE) file for more info.
