@@ -34,7 +34,7 @@ import Configuration
 It inherits the `ConfigurationType` and brings together common configuration types in one place.
 
 ```swift
-enum AppConfiguration: String, ConfigurationType {
+enum AppConfiguration: String, ConfigurationsType {
     case dev
     case prod
 
@@ -60,7 +60,7 @@ extension ConfigurationValues {
 You can import and use the configuration using keypath where you want to use it.
 
 ```swift
-@Configuration(\.default) var configuration
+@Configurations(\.default) var configuration
 ```
 
 ## Support later
