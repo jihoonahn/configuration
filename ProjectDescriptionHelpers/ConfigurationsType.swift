@@ -10,7 +10,7 @@ public protocol ConfigurationsType: Hashable, CaseIterable, RawRepresentable whe
 }
 
 extension ConfigurationsType {
-    var configurationName: ConfigurationName {
+    public var configurationName: ConfigurationName {
         ConfigurationName(stringLiteral: rawValue)
     }
 }
