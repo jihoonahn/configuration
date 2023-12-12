@@ -4,4 +4,13 @@ import ProjectDescription
 public protocol ConfigurationsType: Hashable, CaseIterable, RawRepresentable where RawValue == String {
     /// Specify the configuration path.
     var path: ProjectDescription.Path { get }
+
+    /// Gets the name of the registered configuration.
+    var configurationName: ConfigurationName { get }
+}
+
+extension ConfigurationsType {
+    var configurationName: ConfigurationName {
+        ConfigurationName(stringLiteral: rawValue)
+    }
 }
