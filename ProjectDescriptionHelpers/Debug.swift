@@ -13,11 +13,11 @@ public struct Debug: ConfigurationConvertable {
     ///   - settings: The base build settings to apply
     ///   - xcconfig: The xcconfig file to associate with this configuration
     public init(
-        name: String,
+        name: ConfigurationName,
         settings: SettingsDictionary = [:],
         xcconfig: ProjectDescription.Path? = nil
     ) {
-        self.name = ConfigurationName.configuration(name)
+        self.name = name
         self.settings = settings
         self.xcconfig = xcconfig
     }
@@ -30,7 +30,7 @@ public struct Debug: ConfigurationConvertable {
         _ type: some ConfigurationsType,
         settings: SettingsDictionary = [:]
     ) {
-        self.init(name: type.rawValue, settings: settings, xcconfig: type.path)
+        self.init(name: type.configurationName, settings: settings, xcconfig: type.path)
     }
     
     public func build() -> ProjectDescription.Configuration {
